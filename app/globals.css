@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* globals.css */
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5) translateY(30px);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1) translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-bounceIn {
+  animation: bounceIn 1.5s ease-out forwards;
+}
+
+@keyframes rotateFadeIn {
+  0% {
+    opacity: 0;
+    transform: rotate(-15deg) scale(0.8);
+  }
+  50% {
+    opacity: 0.5;
+    transform: rotate(5deg) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.animate-rotateFadeIn {
+  animation: rotateFadeIn 1.8s ease-in-out forwards;
+}
